@@ -1,0 +1,12 @@
+.register-container{
+    
+    
+    >form{
+        width: 50vw;
+    height: 70wh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    }
+}
