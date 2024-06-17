@@ -52,15 +52,24 @@ const Dashboard = () => {
         <>
             {addToggle ? <AddPost fetchPostData={fetchPostData} /> : <></>}
             <ToastContainer />
-            <div onClick={()=>{addToggle  ? setAddToggle(false) : setAddToggle(true)}} className={addToggle ? "add-blur" : ""}>
-                <button onClick={() => addpost()}>Add new post</button>
+            <div
+                onClick={() => {
+                    addToggle ? setAddToggle(false) : setAddToggle(true);
+                }}
+                className={addToggle ? "add-blur" : ""}
+            >
+                <button onClick={() => addpost()} className="add-post-btn">
+                    Add new post <span className="material-symbols-outlined">add_circle</span>
+                </button>
                 <div className="dashboard-container">
                     {data.map((item) => (
                         <div key={item._id} className="dashboard-card">
                             <img src={item.image} alt="Post" />
                             <h1>{item.title}</h1>
                             <p>{item.content}</p>
-                            <button onClick={() => deletePost(item._id)}>Delete</button>
+                            <button className="delete-post-btn" onClick={() => deletePost(item._id)}>
+                                Delete<span className="material-symbols-outlined">delete </span>
+                            </button>
                         </div>
                     ))}
                 </div>

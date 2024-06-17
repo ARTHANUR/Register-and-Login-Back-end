@@ -1,26 +1,46 @@
-.add-post-module{
+.add-post-module {
     width: 30vw;
-    height: 20rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     padding: 20px;
+    background-color: #b3e78c;
+    border-radius: 20px;
 
-    >input,>textarea{
+
+    >input,
+    >textarea {
         width: 80%;
         height: 2rem;
+        outline: none;
+        border: none;
+        padding-left: 20px;
+        font-size: 1rem;
     }
-     >button{
+
+    >button {
         width: 30%;
         height: 2rem;
-     }
+        background-color: rgba(27, 87, 100, 255);
+         font-size: 1rem;
+        border-radius: 18px;
+        outline: none;
+        border: none;
+        margin: 1rem;
+        font-family: "Playwrite IS", cursive;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: whitesmoke;
+    }
 }
 
-.add-post-container{
+.add-post-container {
     position: absolute;
     left: 30%;
-    top: 20%;
+    top: 10%;
     background-color: rgba(0, 0, 0, 0.223);
     border-radius: 20px;
     z-index: 2;

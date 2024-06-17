@@ -6,9 +6,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    background-color:rgba(255,255,255,255);
 
     >.dashboard-card {
-        border: 1px solid rgba(0, 0, 0, 0.506);
+        background-color: rgba(27,87,100,255);
         width: 25%;
         height: 55vh;
         display: flex;
@@ -16,6 +17,10 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding: 20px;
+        border-radius: 18px;
+        box-shadow: 10px 5px 15px 5px rgba(0, 0, 0, 0.39);
+        color: #ffffff;
+
 
         >img {
             width: 100%;
@@ -25,7 +30,46 @@
     }
 }
 
-.add-blur{
+.add-blur {
     filter: blur(20px);
 
+}
+
+.add-post-btn{
+    background-color: rgba(180,232,140,255);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    margin: 1rem;
+    font-family: "Playwrite IS", cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.delete-post-btn{
+    background-color: #fd8989;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: .0.7rem;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    font-family: "Playwrite IS", cursive;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
 }
